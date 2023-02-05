@@ -54,3 +54,15 @@ yarn migrate
 ```sh
 yarn clean
 ```
+
+## Reference - Smart contract flow
+
+### General flow
+
+![](https://i.imgur.com/zmQnlOh.png)
+
+### Smart contract overview
+
+![](https://i.imgur.com/EE2lC6I.png)
+
+Check it through [draw.io](https://drive.google.com/file/d/1NqtLREoG0voLfhFSasNajkDwm-szm6Co/view?usp=sharing)
