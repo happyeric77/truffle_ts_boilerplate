@@ -1,0 +1,28 @@
+{
+  "name": "truffle_ts_boilerplate",
+  "private": true,
+  "version": "0.0.4",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "generate-types": "typechain --target=truffle-v5 'build/contracts/*.json'",
+    "typecheck": "truffle compile --reset && yarn generate-types && tsc -p ./tsconfig.migrate.json --outDir ./migrations && tsc -p ./tsconfig.test.json --outDir ./test",
+    "test": "tsc -p ./tsconfig.test.json --outDir ./test && truffle test ./test/*.js",
+    "clean": "rm -rf build migrations test types"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.1",
+    "@typechain/truffle-v5": "workspace:^8.0.2",
+    "@types/bn.js": "^4.11.6",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/web3": "^1.2.2",
+    "truffle": "^5.1.22",
+    "typechain": "workspace:^8.1.1",
+    "typescript": "^4.6",
+    "web3": "^1",
+    "web3-core": "^1",
+    "web3-eth-contract": "^1",
+    "web3-utils": "^1"
+  }
+}
